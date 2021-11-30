@@ -18,8 +18,16 @@
  * some()
  * toString()
  * concat()
+ * trim() bosluklari siler
  */
-let nameList = ["Ahmet", "Mehmet", "Ayse", "Zeynep"];
+
+/**
+ * STRING METHODS
+ * toUpperCase()
+ * toLowerCase()
+ */
+
+
 
 //console.log(nameList[1]);
 //console.log(nameList.length);
@@ -47,6 +55,54 @@ numberList.sort(function (a,b) {
 });
 
 console.log(numberList);
+
+///////////////////////////////////////////
+
+
+
+//console.log(nameList.indexOf("Mehmet1"));
+
+//let result = nameList.indexOf("Mehmet1");
+
+//if (result == -1) {
+//    console.log("Mehmet burada yok");
+//} else{
+//    console.log(nameList[1].toUpperCase());
+//}
+
+////////////////////////////////////////////
+
+//let result = nameList.lastIndexOf("Mehmet");
+//console.log(result);
+
+//let result = nameList.includes("Mehmet");
+//console.log(result);
+
+// let nameList2 = ["Osman", "Bedir"];
+// console.log(nameList.concat(nameList2));
+// //now arrays are seperate
+// console.log(nameList2);
+// console.log(nameList);
+
+// //but now arrays together
+// let newNameList = nameList.concat(nameList2);
+// console.log(newNameList);
+
+let nameList = ["Ahmet", "Mehmet", "Ayse", "Zeynep"];
+//to take some element in the array
+// console.log(nameList.slice(1,2));
+// console.log(nameList.slice(1,3));
+// console.log(nameList.slice(1));
+// console.log(nameList.slice(2));
+// console.log(nameList.splice(1, 2));
+
+
+
+
+
+
+
+
 
 
 
