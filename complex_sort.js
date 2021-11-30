@@ -1,3 +1,10 @@
+/**
+ * ilk asamada kullanicidan 5 adet sayi girilmesi isteniyor,
+ * ikinci asamada kullanicinin girisini yaptigi sayilarin matematiksel degerlerine ulasiyoruz, 
+ * ücüncü olark girilen bu sayilarin matematiksel degerlerinin karsilastirilmasi yapiliyor,
+ * Karsilastirilmasi yapilan sayilardan en büyügü en solda olacak sekilde, sayilar büyükten kücüge siralaniyor,
+ * son olarak sayfaya ve console ekranina cikan siralama yazdiriliyor**/
+
 //function structure was created
 function PushButton()
 {
