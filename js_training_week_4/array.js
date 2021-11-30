@@ -96,6 +96,17 @@ let nameList = ["Ahmet", "Mehmet", "Ayse", "Zeynep"];
 // console.log(nameList.slice(2));
 // console.log(nameList.splice(1, 2));
 
+//for one person
+nameList[0];
+console.log(nameList[0]);
+console.log(nameList[0].toUpperCase());
+///////////////////////////////////////////
+
+//
+for(let i = 0; i < nameList.length; i++){
+    console.log(nameList[i].toUpperCase());
+}
+
 
 
 
