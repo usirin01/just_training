@@ -21,13 +21,7 @@
  * trim() bosluklari siler
  */
 
-/**
- * STRING METHODS
- * toUpperCase()
- * toLowerCase()
- */
-
-
+ //let nameList = ["Ahmet", "Mehmet", "Ayse", "Zeynep"];
 
 //console.log(nameList[1]);
 //console.log(nameList.length);
@@ -88,7 +82,7 @@ console.log(numberList);
 // let newNameList = nameList.concat(nameList2);
 // console.log(newNameList);
 
-let nameList = ["Ahmet", "Mehmet", "Ayse", "Zeynep"];
+
 //to take some element in the array
 // console.log(nameList.slice(1,2));
 // console.log(nameList.slice(1,3));
@@ -97,15 +91,40 @@ let nameList = ["Ahmet", "Mehmet", "Ayse", "Zeynep"];
 // console.log(nameList.splice(1, 2));
 
 //for one person
-nameList[0];
-console.log(nameList[0]);
-console.log(nameList[0].toUpperCase());
-///////////////////////////////////////////
+// nameList[0];
+// console.log(nameList[0]);
+// console.log(nameList[0].toUpperCase());
+// ///////////////////////////////////////////
 
-//
-for(let i = 0; i < nameList.length; i++){
-    console.log(nameList[i].toUpperCase());
+// //
+// for(let i = 0; i < nameList.length; i++){
+//     console.log(nameList[i].toUpperCase());
+// }
+
+/**
+ * STRING METHODS
+ * toUpperCase()
+ * toLowerCase()
+ */
+
+let fruit = "Apple";
+//to choose element
+console.log(fruit.charAt(2));
+//element unique code
+console.log(fruit.charCodeAt(4))
+//you can change element to other element
+console.log(fruit.replace("p", "x"));
+
+let myUrl = "üstad";
+
+let result = myUrl.indexOf("ü");
+
+if(result == -1){
+    //ü harfi yok baska islem yapmiyorum
+}else{
+    myUrl = myUrl.replace("ü", "u");
 }
+console.log(myUrl);
 
 
 
