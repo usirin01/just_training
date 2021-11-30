@@ -1,83 +1,49 @@
-// if user click on  any button, the result display on the screen
-// i will  put 10 button in  html code .
-// i will  hide Ahmet to 7.vagon
-// if user click on compartiment 7 the result (tebrikler) will write on the screen
-// if user click on the others button the results will change
 
+//first step is we have ten trains wagon on the screen
+//Users have 4 chance for find to him
+//Users click on any wagon, we will show some instructions about his place
+//If users find correct wagon, the wagon color will change "green" color and show "congratulations" message
+
+function findHim1(){
+  document.getElementById("instructions").innerHTML = "You are so far, Ahmet is behind the train";
+}
+
+function findHim2(){
+  document.getElementById("instructions").innerHTML = "You are far, Ahmet is behind the train"; 
+  
+}
+function findHim3(){
+  document.getElementById("instructions").innerHTML = "Try again,he is behind the train";
  
-let sayac = 0 ;
-let sonuc = document.getElementById("vagon1").addEventListener("click" , function(){document.getElementById("result").innerHTML = "You didnt find it He is far away" ;
-vagon1.style.backgroundColor = "red"});
+}
+function findHim4(){
+  document.getElementById("instructions").innerHTML = "You should look back";  
 
-while (sayac < 4){
-  sonuc += +sayac ;
-  sayac++ ;
 }
-if (sonuc > 4){
-  document.getElementById("result").innerHTML = "GAME OVER"
+function findHim5(){
+  document.getElementById("instructions").innerHTML = "You should look a little further back"; 
+ 
 }
-
- //for (let tiklama = 0; tiklama < 5; tiklama++){}
-
-
-function dogru(){
-  document.getElementById("result").innerHTML = "Congratulations you found it" ; 
-  vagon7.style.backgroundColor = "rgb(79, 238, 79)"
-}
-function uzak1(){
-  document.getElementById("result").innerHTML = "You didnt find it He is far away" ;
-  vagon1.style.backgroundColor = "red"
-}
-function uzak2(){
-  document.getElementById("result").innerHTML = "You didnt find it He is far away" ;
-  vagon2.style.backgroundColor = "red"
-}
-function uzak3(){
-  document.getElementById("result").innerHTML = "You didnt find it He is forward" ;
-  vagon3.style.backgroundColor = "yellow"
-}
-function uzak4(){
-  document.getElementById("result").innerHTML = "You didnt find it He is forward" ;
-  vagon4.style.backgroundColor = "yellow"
-}
-function uzak5(){
-  document.getElementById("result").innerHTML = "You came close He is forward" ;
-  vagon5.style.backgroundColor = "yellow"
-}
-function uzak6(){
-  document.getElementById("result").innerHTML = "You didnt find it He is back" ;
-  vagon10.style.backgroundColor = "red"
+function findHim6(){
+  document.getElementById("instructions").innerHTML = "Ahmet is behind the train, but you are a little bit close now"; 
+  
 }
 
-function yakin1(){
-  document.getElementById("result").innerHTML = "You came close.look at forward " ;
-  vagon6.style.backgroundColor = "yellow"
+function youGotIt(){
+  document.getElementById("instructions").innerHTML = "You are so close but still he is behind the train";
 }
-function yakin2(){
-  document.getElementById("result").innerHTML = "You came close.look at back" ;
-  vagon8.style.backgroundColor = "yellow"
+
+function findHim8(){
+  document.getElementById("instructions").innerHTML = "<strong>Congratulations You found him !!!"; 
+  wagon8.style.backgroundColor = "green"; 
 }
-function yakin3(){
-  document.getElementById("result").innerHTML = "You came close.look at back" ;
-  vagon9.style.backgroundColor = "yellow"
+function findHim9(){
+  document.getElementById("instructions").innerHTML = "Ahmet is still in front of the wagons of the train";
+}
+function findHim10(){
+  document.getElementById("instructions").innerHTML = "Ahmet is in front of the wagons of the train" ; 
 }
 
 
 
-
-// let sayac = 0;
-// let text = "GAME OVER" ;
-// while (sayac < 5){
-//    text +=  +sayac ;
-//  sayac++ ;
-// }
-
-//const container = document.querySelector("#container");
-
-//console.log(container)
-
-//container.addEventListener("click",function(){
-  //  container.style.backgroundColor="red"
-    //container.style.left="600px"
-// })
 
