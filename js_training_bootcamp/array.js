@@ -13,16 +13,19 @@
 
 //Verilen iki Array'in elemanlarini karsilastiriniz ve iki dizide de ortak olan elemanlarin toplamini bulunuz. 
 
-// let array1 = [1,5,2,-6,23,100];
-// let array2 = [1,15,32,-6,213,100];
-// var toplam = 0;
+let array1 = [1,5,2,-6,23,100];
+let array2 = [1,15,32,-6,213,100];
+var toplam = 0;
 
-// for (var index = 0; index < array1.length; index++) {
-//     if (array2.includes(array1[index])) 
-//     {
-//         toplam = toplam + array1[index];
-//     }
-// }
+for (var index = 0; index < array1.length; index++) {
+    if (array2.includes(array1[index])) 
+    {
+        //console.log(index);
+        //console.log(array1[index]);
+        toplam = toplam + array1[index];
+        console.log(toplam);
+    }
+}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //Verilen bir cümlede verilen bir kelimenin kaç defa geçtiğini bulan bir program yazınız. 
