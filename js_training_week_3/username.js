@@ -2,8 +2,6 @@
  * 
  */
 
-
-
 let btnLogin = document.querySelector("#login");
 btnLogin.addEventListener("click", function(event){
 

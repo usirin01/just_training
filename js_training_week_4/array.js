@@ -1,27 +1,28 @@
 /**
  * ARRAY METHODS
- * pop()
- * push()
- * shift()
+ * pop()------------------------
+ * push()-----------------------
+ * shift()----------------------
  * unshift()
- * sort()
+ * sort()------------------------
  * reduce()
  * split()
  * filter()
- * lastIndexOf()
- * includes()
+ * indexOf()---------------------
+ * lastIndexOf()-----------------
+ * includes()--------------------
  * map()
  * foreach()
  * reverse()
- * join()
+ * join()------------------------
  * slice()
  * some()
  * toString()
- * concat()
+ * concat()----------------------
  * trim() bosluklari siler
  */
 
- //let nameList = ["Ahmet", "Mehmet", "Ayse", "Zeynep"];
+ let nameList = ["Ahmet", "Mehmet", "Ayse", "Zeynep"];
 
 //console.log(nameList[1]);
 //console.log(nameList.length);
@@ -30,10 +31,10 @@
 //console.log(nameList);
 
 //nameList.shift();
-//console.log(nameList);
+//console.log(nameList); "shift" ilk elemani cikariyor "pop" son elemani cikariyor
 
-//nameList.unshift();
-//console.log(nameList);
+nameList.unshift();
+console.log(nameList);
 
 //nameList.pop();
 //console.log(nameList);
@@ -42,13 +43,13 @@
 //nameList.reverse();
 //console.log(nameList);
 
-let numberList = [4, 6, 1, 9, 0, 23];
+// let numberList = [4, 6, 1, 9, 0, 23];
 
-numberList.sort(function (a,b) {
-    return (a-b);
-});
+// numberList.sort(function (a,b) {
+//     return (a-b);
+// });
 
-console.log(numberList);
+// console.log(numberList);
 
 ///////////////////////////////////////////
 
@@ -66,8 +67,8 @@ console.log(numberList);
 
 ////////////////////////////////////////////
 
-//let result = nameList.lastIndexOf("Mehmet");
-//console.log(result);
+let result = nameList.lastIndexOf("Mehmet");
+console.log(result);
 
 //let result = nameList.includes("Mehmet");
 //console.log(result);
@@ -97,9 +98,9 @@ console.log(numberList);
 // ///////////////////////////////////////////
 
 // //
-// for(let i = 0; i < nameList.length; i++){
-//     console.log(nameList[i].toUpperCase());
-// }
+for(let i = 0; i < nameList.length; i++){
+    console.log(nameList[i].toUpperCase());
+}
 
 /**
  * STRING METHODS
@@ -107,24 +108,28 @@ console.log(numberList);
  * toLowerCase()
  */
 
-let fruit = "Apple";
-//to choose element
-console.log(fruit.charAt(2));
-//element unique code
-console.log(fruit.charCodeAt(4))
-//you can change element to other element
-console.log(fruit.replace("p", "x"));
+// let fruit = "Apple";
+// //to choose element
+// console.log(fruit.charAt(2));
+// //element unique code
+// console.log(fruit.charCodeAt(4))
+// //you can change element to other element
+// console.log(fruit.replace("p", "x"));
 
-let myUrl = "üstad";
+// let myUrl = "üstad";
 
-let result = myUrl.indexOf("ü");
+// let result = myUrl.indexOf("ü");
 
-if(result == -1){
-    //ü harfi yok baska islem yapmiyorum
-}else{
-    myUrl = myUrl.replace("ü", "u");
-}
-console.log(myUrl);
+// if(result == -1){
+//     //ü harfi yok baska islem yapmiyorum
+// }else{
+//     myUrl = myUrl.replace("ü", "u");
+// }
+// console.log(myUrl);
+
+let myText = "007";
+let result = myText.padStart(5,"00" );
+console.log(result);
 
 
 

@@ -24,12 +24,11 @@ for(let i=0; i<10; i++){
 
     div.style.left = leftPozisyon + "px";
     div.style.top = topPozisyon + "px";
-    div.style.backroundColor = randomColor;
     div.syle.borderRadius = (cap/2) + "px";
     div.style.width = cap + "px";
     div.style.height = cap + "px";
 
-}
+    }
  
 
 })
